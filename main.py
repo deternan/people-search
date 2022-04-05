@@ -1,4 +1,23 @@
+'''
+version: April 05, 2022 09:00 PM
+Last revision: April 05, 2022 09:30 PM
 
+Author : Chao-Hsuan Ko
+
+'''
+
+'''
+Reference
+https://blog.csdn.net/ltochange/article/details/122811731
+https://github.com/mozillazg/python-pinyin#id3
+https://pypi.org/project/pycorrector/
+https://www.jb51.net/article/216777.htm
+https://github.com/kjanjua26/Pyphones
+
+Data
+https://data.gov.tw/dataset/5961
+
+'''
 
 from pypinyin import pinyin, lazy_pinyin, Style
 import os
