@@ -3,7 +3,21 @@
 '''
 Created on April 04, 2022    11:32 PM
 Last revised : April 23, 2022 04:07 PM
-author: Chao-Hsuan Ke
+Last revision: April 23, 2022 04:07 PM
+
+Author : Chao-Hsuan Ko
+
+
+Reference
+https://blog.csdn.net/ltochange/article/details/122811731
+https://github.com/mozillazg/python-pinyin#id3
+https://pypi.org/project/pycorrector/
+https://www.jb51.net/article/216777.htm
+https://github.com/kjanjua26/Pyphones
+
+Data
+https://data.gov.tw/dataset/5961
+
 '''
 
 from pypinyin import pinyin, lazy_pinyin, Style
