@@ -98,14 +98,14 @@ if __name__ == '__main__':
             for character in all_list[1]:
                 second_wordlist += character
                 output_list = list(product(first_wordlist, second_wordlist))
-            print(output_list)
+            #print(output_list)
         elif len(all_list) == 3:
             for character in all_list[1]:
                 second_wordlist += character
             for character in all_list[2]:
                 third_wordlist += character
                 output_list = list(product(first_wordlist, second_wordlist, third_wordlist))
-            print(output_list)
+            #print(output_list)
         elif len(all_list) == 4:
             for character in all_list[1]:
                 second_wordlist += character
@@ -114,7 +114,7 @@ if __name__ == '__main__':
             for character in all_list[3]:
                 four_wordlist += character
                 output_list = list(product(first_wordlist, second_wordlist, third_wordlist, four_wordlist))
-            print(output_list)
+            #print(output_list)
 
 
         # Display
