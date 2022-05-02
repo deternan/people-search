@@ -22,6 +22,8 @@ https://data.gov.tw/dataset/5961
 from pypinyin import pinyin, Style
 from itertools import product
 
+from ES_Query import ESQuery
+
 
 def get_all_char_pinyin():
     path = "all_chars.txt"
@@ -49,7 +51,7 @@ if __name__ == '__main__':
 
     similarityText_Dict = dict()
 
-    inputStr = '廖健宏'
+    inputStr = '廖件洪'
 
     collect_check = True
     for word in list(inputStr):
@@ -119,14 +121,18 @@ if __name__ == '__main__':
 
         # Display
         display_str = ''
+        possible_Dict = []
         for nameCandidate in output_list:
             display_str = ''
             for name in nameCandidate:
                 display_str += name
-            print(display_str)
+            #print(display_str)
+            possible_Dict.append(display_str)
+        #print(possible_Dict)
 
-
-
+        # Query
+        esquery = ESQuery()
+        esquery.main_processing(possible_Dict)
 
 
 
