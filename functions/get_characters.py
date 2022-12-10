@@ -27,7 +27,22 @@ for i in range(len(df['NAME'])):
     allName += df['NAME'][i]
     #print(df['NAME'][i])
 
+# all characters length
 #print(len(allName))
 
-result = "".join(dict.fromkeys(allName))
-print(len(result))
+# remove duplicated characters
+result = "\n".join(dict.fromkeys(allName))
+#print(len(result))
+
+# output
+outputFolder = "../"  # output folder name
+outputFile = "all_chars_.txt"  # output file name
+
+# open file
+fp = open(outputFolder + outputFile, "a", encoding='UTF-8')  # 'a' --> overlapping
+# write to output file
+fp.writelines(result)
+
+fp.close()
+
+print('done')
